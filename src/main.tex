@@ -1,0 +1,101 @@
+%! Author = levi.hogdal
+%! Date = 2023-09-19
+
+
+% Preamble
+\documentclass[11p]{article}
+% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[
+    backend=biber,
+    style=authoryear-ibid,
+    sorting=ynt
+]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%Källor
+\graphicspath{ {./images/} }
+
+\title{Labrapprt \\ \small Fysik 1}
+\author{Levi Högdal }
+\date{\today}
+
+\begin{document}
+
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+
+            \Huge
+            \textbf{Laboration 5}
+
+            \vspace{0.5cm}
+            \LARGE
+            Ellära
+
+            \vspace{1.5cm}
+
+            \textbf{Ditt namn!}
+
+            \vfill
+
+
+            Fysik 1
+
+            \vspace{0.8cm}
+
+            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+
+            \Large
+            Teknikprogrammet\\
+            NTI Gymnasiet\\
+            Umeå\\
+            \today
+
+        \end{center}
+    \end{titlepage}
+    \section{Syfte och frågeställning}
+    \section{Del 1}
+    Vi ska matematiskt bestämma med vart en kula kommer landa om man skjuter den ut ur en kulkanon och sen kolla om våra beräkningar stämmer med vart kulan hamnar i verklighet.
+    \subsection{Material och metod}
+    \paragraph{Material:}
+    \begin{itemize}
+        \item En kulkanon
+        \item En kula
+        \item En linjal/måtband
+        \item En låda där kulan ska landa
+    \end{itemize}
+    \subsection{Metod}
+    Först måste man bestämma utgångshastigheten av kulan.
+    Man kan göra det genom att skjuta bollen rakt uppåt och kolla hur högt den kommer.
+    När man vet hur högt bollen kommer kan man beräkna utgångshastigheten.
+    När man vet utgångshastigheten ska man bestämmer vart bollen kommer landa när skillnaden i höjd för vart kullan sköts ifrån och landade är 0.
+    Efter det ska man kolla hur långt kullan rör sig horisontellt om den landar på marken.
+
+    \subsection{Resultat}
+    När man vet hur högt bollen kommer kan man använda formeln $Y_{max}=(v^2 * sin^2(\alpha))/2g$ där $Y_{max}$ är hur högt bollen kom, g är gravitationskraft och $\alpha$ är $90^{\circ}$
+    Formeln kan skrivas om till $v=\sqrt((2g*Y_{max})/sin^2(\alpha))$.
+    \newline $v=\sqrt((2*9.82*1.29)/sin^2(60^{\circ})) = 5.03 m/s$
+    \newline\newline
+    För att sen lista ut vart kullan kommer landar kan man använde formeln $x_{max}=(v^2*sin(2\alpha))/g$
+    Formeln antar att kullan kommer landa på samma höjd som den blev skjuten ifrån.
+    För vårt experiment är v utgångshastigheten som beräknades tidigare, $\alpha$ är $60^{\circ}$ och g är gravitationskraft.
+    \newline $x_{max}=(5.03^2*sin(2*60^{\circ}))/9.82 = 2.23 m$
+    \newline\newline
+    Efteråt skulle vi också kolla vart bollen skulle landa om man sköt den ner på golvet från bänken.
+    För att veta vilken tid bollen träffade golvet.
+    Man kan kolla tiden genom att kolla när y värdet för kullan är samma som golvet.
+    Bänken var 73 cm högt.
+    Man kan med ett grafritande verktyg kolla vart $5.03*sin(60)*x-(9.82*x^2)/2$ och $-0.73$
+    När man gör det 
+
+    \begin{itemize}
+        \item Utgångshastighet = $5.03 m/s$
+        \item Hår långt kullan har farit horisontellt när den landade på bänken = 2.23 m
+        \item Hår långt kullan har farit horisontellt när den landade på golvet = 2.59 m
+    \end{itemize}
+    \subsection{Analys}
+    \section{Diskussion}
+\end{document}
